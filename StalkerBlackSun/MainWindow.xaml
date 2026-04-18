@@ -12,15 +12,21 @@
         </StackPanel>
 
         <StackPanel x:Name="GameScreen" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed">
-            <TextBlock x:Name="txtScene" FontSize="18" Foreground="White" TextWrapping="Wrap" TextAlignment="Center" Margin="10" Width="650" Height="150"/>
+            <Border BorderBrush="Orange" BorderThickness="1" Margin="10" CornerRadius="5">
+                <Image x:Name="imgScene" Width="600" Height="300" Stretch="UniformToFill"/>
+            </Border>
+
+            <TextBlock x:Name="txtScene" FontSize="18" Foreground="White" TextWrapping="Wrap" 
+               TextAlignment="Center" Margin="10" Width="650" Height="100"/>
+
             <TextBlock x:Name="txtLog" Text="— Хроника похода —" FontSize="11" Foreground="DimGray" TextAlignment="Center" Margin="5"/>
 
             <StackPanel x:Name="ChoicePanel" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="btnLeft" Width="220" Height="50" Margin="10" Click="GameButton_Click"/>
-                <Button x:Name="btnRight" Width="220" Height="50" Margin="10" Click="GameButton_Click"/>
+                <Button x:Name="btnLeft" Width="220" Height="50" Margin="10" Click="GameButton_Click" Background="#FF333333" Foreground="White"/>
+                <Button x:Name="btnRight" Width="220" Height="50" Margin="10" Click="GameButton_Click" Background="#FF333333" Foreground="White"/>
             </StackPanel>
 
-            <Button x:Name="btnNext" Content="ДАЛЕЕ" Visibility="Collapsed" Width="220" Height="50" Margin="10" Click="GameButton_Click"/>
+            <Button x:Name="btnNext" Content="ДАЛЕЕ" Visibility="Collapsed" Width="220" Height="50" Margin="10" Click="GameButton_Click" Background="#FF444444" Foreground="White"/>
         </StackPanel>
     </Grid>
 </Window>
