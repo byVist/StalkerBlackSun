@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StalkerBlackSun"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="BlackSun" Height="450" Width="800">
+    <Grid Background="#FF1B1B1B">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <TextBlock Text="S.T.A.L.K.E.R." 
+                   FontSize="48" 
+                   FontWeight="Bold" 
+                   Foreground="Orange" 
+                   HorizontalAlignment="Center" 
+                   FontFamily="Impact"/>
+
+            <TextBlock Text="ЧЕРНОЕ СОЛНЦЕ" 
+                   FontSize="36" 
+                   FontWeight="Bold" 
+                   Foreground="White" 
+                   HorizontalAlignment="Center" 
+                   Margin="0,0,0,30" 
+                   FontFamily="Impact"/>
+
+            <Label Content="Автор: Замаратский Данил Максимович" 
+               FontSize="18" 
+               Foreground="Gray" 
+               HorizontalAlignment="Center" 
+               FontStyle="Italic"/>
+
+        </StackPanel>
     </Grid>
 </Window>
